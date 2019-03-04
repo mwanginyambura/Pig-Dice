@@ -26,7 +26,7 @@
     <div class="col-md-5"></div>
     <div class="container-fluid">
       <div class="row slide">
-        <div class="col-md-6 hidden left" >
+        <div class="col-md-6 hidden left">
           <h1 class="text-center" id="title">Pig Dice</h1>
           <p>Pig is a simple dice game which in its basic form is playable with just a single die. You win by being the
             first player to score 100 or more points. To play you'll need 2 to 10 players and one 6-sided die.
@@ -43,69 +43,69 @@
               that turn, and she passes the die to the next player.</li>
             <li>Play passes from player to player until a winner is
               determined.</li>
-            </ul>
-            <button id="next" class="btn btn-Success hidden">Got it!</button>
+          </ul>
+          <button id="next" class="btn btn-Success hidden">Got it!</button>
         </div>
         <div class="col-md-6 right"></div>
       </div>
-      </div>
     </div>
+  </div>
 
-    <div class="container">
-      <div class="row slide">
-        <div class="col-md-4"></div>
-        <div class="col-md-4 hidden" id="nameEnter">
-          <h1>Enter your Names</h1>
-          <form id="playerName">
-            <div class="form-group">
+  <div class="container">
+    <div class="row slide">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 hidden" id="nameEnter">
+        <h1>Enter your Names</h1>
+        <form id="playerName">
+          <div class="form-group">
             <label for="playerName0">Player 1</label><br>
-              <input class="form-control" type="text" id="playerName0">
-            </div>
-            <div class="form-group">
-              <label for="playerName1">Player 2</label><br>
-              <input class="form-control" type="text" id="playerName1">
-            </div>
-            <button class="btn btn-default" type="submit" form="playerName" id="play">Let's Play!</button>
-          </form>
-        </div>
-        <div class="col-md-4"></div>
+            <input class="form-control" type="text" id="playerName0">
+          </div>
+          <div class="form-group">
+            <label for="playerName1">Player 2</label><br>
+            <input class="form-control" type="text" id="playerName1">
+          </div>
+          <button class="btn btn-default" type="submit" form="playerName" id="play">Let's Play!</button>
+        </form>
       </div>
+      <div class="col-md-4"></div>
     </div>
-    <div class="container">
-      <div id="game" class="row slide text-center"><br>
-        <div class="col-md-5">
-          <div class="panel panel-default active-0"><br>
-            <div class="panel-body">
-              <h1 class="player-name" id="player0"></h1><br>
-              <span class="score" id="score0"></span><br>
-              <div class="scoreboard"><br>
-                <h4>Current Score:</h4><span class="current" id="current0"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <h1>Die Roll</h1>
-          <div id="rollDice"></div>
-          <div class="button-group">
-            <button id="roll" class="btn btn-default">Roll</button>
-            <button id="hold" class="btn btn-default">Hold</button>
-            <button id="newGame" class="btn btn-default">New Game</button>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <h1 class="player-name" id="player1"></h1>
-              <span class="score" id="score1"></span>
-              <div class="scoreboard">
-                <h4>Current Score:</h4><span class="current" id="current1"></span>
-              </div>
+  </div>
+  <div class="container">
+    <div id="game" class="row slide text-center"><br>
+      <div class="col-md-5">
+        <div class="panel panel-default active-0"><br>
+          <div class="panel-body">
+            <h1 class="player-name" id="player0"></h1><br>
+            <span class="score" id="score0"></span><br>
+            <div class="scoreboard"><br>
+              <h4>Current Score:</h4><span class="current" id="current0"></span>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-md-2">
+        <h1>Die Roll</h1>
+        <div id="rollDice"></div>
+        <div class="button-group">
+          <button id="roll" class="btn btn-default">Roll</button>
+          <button id="hold" class="btn btn-default">Hold</button>
+          <button id="newGame" class="btn btn-default">New Game</button>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h1 class="player-name" id="player1"></h1>
+            <span class="score" id="score1"></span>
+            <div class="scoreboard">
+              <h4>Current Score:</h4><span class="current" id="current1"></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
