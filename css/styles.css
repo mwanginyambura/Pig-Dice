@@ -1,6 +1,7 @@
 
 body{
-  background-image: url("../images/image.jpg");
+background-color: pink;
+  opacity:0.8;
 }
 h1{
   font-family: 'Montez', cursive;
