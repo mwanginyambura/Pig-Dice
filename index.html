@@ -10,77 +10,74 @@
 </head>
 
 <body>
-  <div class="jumbotron>" <div id="color">
-    <marquee>
-      <div class="jumbotron">
+  <div id="color">
+    <div class="jumbotron">
+      <marquee>
         <h1>~~~WELCOME TO PIGGIE WORLD...</h1>
-    </marquee>
+      </marquee>
+    </div>
   </div>
-  </div>
-  <div class="row">
+  <div class="row" id="page1">
     <div class="col-md-5"></div>
     <div class="col-md-2">
       <button id="new" type="button" class="center">Click here!</button>
     </div>
     <div class="col-md-5"></div>
-  </div>
-  </div>
+    <div class="container-fluid">
+      <div class="row slide">
+        <div class="col-md-6 hidden left" >
+          <h1 class="text-center" id="title">Pig Dice</h1>
+          <p>Pig is a simple dice game which in its basic form is playable with just a single die. You win by being the
+            first player to score 100 or more points. To play you'll need 2 to 10 players and one 6-sided die.
+          </p>
 
-  <div class="container">
-    <div class="body">
-      <div class="rules">
-        <div class="row slide">
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-md-6">
-                <h1 class="text-center">Pig Dice</h1>
-                <p>Pig is a simple dice game which in its basic form is playable with just a single die. You win by being the
-                  first player to score 100 or more points. To play you'll need 2 to 10 players and one 6-sided die.
-                </p>
-              </div>
-              <div class="m">
-                <div class="col-md-6">
-                  <h1 class="text-center">So how do you play Pig Dice? </h1>
-                  <ul>
-                    <li>Choose a player to go first.</li>
-                    <li>The player to throw a die and score as many points as the total shown on the
-                      die providing the die doesn’t roll a 1.</li>
-                    <li>The player may continue rolling and accumulating points (but risk
-                      rolling a 1) or end her turn.</li>
-                    <li>If the player rolls a 1 her turn is over, she loses all points she accumulated
-                      that turn, and she passes the die to the next player.</li>
-                    <li>Play passes from player to player until a winner is
-                      determined.</li>
-                    </p>
-                </div>
-              </div>
-            </div>
-            <button id="next" class="btn btn-default">Got it!</button>
-          </div>
+          <h1 class="text-center">So how do you play Pig Dice? </h1>
+          <ul>
+            <li>Choose a player to go first.</li>
+            <li>The player to throw a die and score as many points as the total shown on the
+              die providing the die doesn’t roll a 1.</li>
+            <li>The player may continue rolling and accumulating points (but risk
+              rolling a 1) or end her turn.</li>
+            <li>If the player rolls a 1 her turn is over, she loses all points she accumulated
+              that turn, and she passes the die to the next player.</li>
+            <li>Play passes from player to player until a winner is
+              determined.</li>
+            </ul>
+            <button id="next" class="btn btn-Success hidden">Got it!</button>
+        </div>
+        <div class="col-md-6 right"></div>
+      </div>
+      </div>
     </div>
-      <div class="row slide ">
-        <div class="col-xs-12">
+
+    <div class="container">
+      <div class="row slide">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 hidden" id="nameEnter">
           <h1>Enter your Names</h1>
           <form id="playerName">
             <div class="form-group">
-              <label for="playerName0">Player 1</label>
+            <label for="playerName0">Player 1</label><br>
               <input class="form-control" type="text" id="playerName0">
             </div>
             <div class="form-group">
-              <label for="playerName1">Player 2</label>
+              <label for="playerName1">Player 2</label><br>
               <input class="form-control" type="text" id="playerName1">
             </div>
             <button class="btn btn-default" type="submit" form="playerName" id="play">Let's Play!</button>
           </form>
         </div>
+        <div class="col-md-4"></div>
       </div>
-      <div id="game" class="row slide text-center">
+    </div>
+    <div class="container">
+      <div id="game" class="row slide text-center"><br>
         <div class="col-md-5">
-          <div class="panel panel-default active-0">
+          <div class="panel panel-default active-0"><br>
             <div class="panel-body">
-              <h1 class="player-name" id="player0"></h1>
-              <span class="score" id="score0"></span>
-              <div class="scoreboard">
+              <h1 class="player-name" id="player0"></h1><br>
+              <span class="score" id="score0"></span><br>
+              <div class="scoreboard"><br>
                 <h4>Current Score:</h4><span class="current" id="current0"></span>
               </div>
             </div>
@@ -108,7 +105,66 @@
         </div>
       </div>
     </div>
-  </div>
+
+
+  <!-- <div class="container">
+    <div class="body">
+      <div class="rules">
+        <div class="row slide">
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-md-6 hidden" id="left">
+                <div class="m-n">
+                  <h1 class="text-center">Pig Dice</h1>
+                  <p>Pig is a simple dice game which in its basic form is playable with just a single die. You win by being the
+                    first player to score 100 or more points. To play you'll need 2 to 10 players and one 6-sided die.
+                  </p>
+                </div>
+              </div>
+
+
+
+              <div class="m">
+                <div class="col-md-6 hidden left">
+                  <h1 class="text-center">So how do you play Pig Dice? </h1>
+                  <ul>
+                    <li>Choose a player to go first.</li>
+                    <li>The player to throw a die and score as many points as the total shown on the
+                      die providing the die doesn’t roll a 1.</li>
+                    <li>The player may continue rolling and accumulating points (but risk
+                      rolling a 1) or end her turn.</li>
+                    <li>If the player rolls a 1 her turn is over, she loses all points she accumulated
+                      that turn, and she passes the die to the next player.</li>
+                    <li>Play passes from player to player until a winner is
+                      determined.</li>
+                </div>
+              </div> -->
+<!--
+
+            </div>
+            <button id="next" class="btn btn-Success hidden">Got it!</button>
+          </div>
+        </div> -->
+
+
+
+          <!-- <div class="row slide ">
+            <div class="col-xs-12">
+              <h1>Enter your Names</h1>
+              <form id="playerName">
+                <div class="form-group">
+                <label for="playerName0">Player 1</label><br>
+                  <input class="form-control" type="text" id="playerName0">
+                </div>
+                <div class="form-group">
+                  <label for="playerName1">Player 2</label><br>
+                  <input class="form-control" type="text" id="playerName1">
+                </div>
+                <button class="btn btn-default" type="submit" form="playerName" id="play">Let's Play!</button>
+              </form>
+            </div>
+          </div> -->
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 

@@ -1,8 +1,7 @@
 $(document).ready(function() {
       $("#new").click(function() {
         $("#new").hide();
-          $(".body").slideDown(500);
-          $(".body").show();
+        $(".hidden").fadeIn();
         })
       })
 
@@ -62,14 +61,14 @@ $(document).ready(function() {
         }
       }
 
-      function slideQuestion(n) {
+      function slideQuestion(p) {
         $(".slide")
           .eq(currentSlide)
           .removeClass("slide-active");
         $(".slide")
-          .eq(n)
+          .eq(p)
           .addClass("slide-active");
-        currentSlide = n;
+        currentSlide = p;
       }
 
       slideQuestion(0);
@@ -85,9 +84,9 @@ $(document).ready(function() {
         holdBtn.click(hold);
         newGame.click(init);
         $("#next").click(nextsSlide);
-
         $("#playerName").submit(function(e) {
           player[0] = $("#playerName0").val();
+
           player[1] = $("#playerName1").val();
           $("#player0").text(player[0].toUpperCase());
           $("#player1").text(player[1].toUpperCase());
@@ -95,9 +94,10 @@ $(document).ready(function() {
           if ($("#playerName0").val() === "" || $("#playerName1").val() === "") {
             alert("Please fill in your names to continue!");
           } else {
-            $("#playerName").hide();
+            $("#nameEnter").hide();
             $("#game").addClass("slide-active");
           }
           e.preventDefault();
         });
+
       });
